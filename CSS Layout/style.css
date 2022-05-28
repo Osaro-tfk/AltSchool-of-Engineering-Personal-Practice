@@ -1,0 +1,91 @@
+/*block & inline display
+div{
+    height: 50px;
+    width: 50px;
+    display:inline;
+    padding-inline: 10px;
+    border: 5px solid #000;
+}
+div.first{
+    margin-left: -1%;
+}*/
+
+/*Grid layout*/
+header{
+    width: 100%;
+    height: 90px;
+    margin-top: -1%;
+    margin-left: -1%;
+    background-color: #000;
+}
+.grid-container{
+   margin-left: -1%;
+   margin-right: -0.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    border: 2px solid #000;
+    text-align: center;
+    /*column-gap: 10px;
+    row-gap: 10px;*/
+    gap: 10px 10px;
+}
+div{
+    border: 2px solid #000;
+}
+
+.animation{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+}
+@keyframes slidein{
+    from{
+        margin-left:100%;
+        width:300%;
+        color:blue;
+    }
+    75%{
+        font-size: 300%;
+        margin-left:25%;
+        width:150%;
+    }
+    to{
+        margin-left:0%;
+        width:100%;
+        color:green;
+    }
+}
+.box{
+    background-color:#000;
+    width: 500px;
+    height:500px;
+    border-radius:20px;
+}
+@media (min-width:320px) and (max-width:480px){
+.box{
+background-color:aqua;
+}
+}
+@media (min-width:481px) and (max-width:768px){
+    .box{
+    background-color:blue;
+    }
+    }
+@media (min-width:769px) and (max-width:1024px){
+        
+    .box{
+    background-color:green;
+    }
+    }
+@media (min-width:1025px) and (max-width:1200px){
+    .box{
+    background-color:yellow;
+    }
+    }
+@media (min-width:320px) and (max-width:480px){
+    .box{
+    background-color:goldenrod;
+    }
+    }
